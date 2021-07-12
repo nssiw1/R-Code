@@ -20,10 +20,7 @@ library(Hmisc)
 library(RODBC)
 date='2021-04-30'
 TheMonth = substr(Sys.Date(),1,7)
-loan=odbcDriverConnect('driver={MySQL ODBC 5.1 Driver};
-                        server=pandaria-for-data-analyst.cygxrcm7zhvh.ap-southeast-1.rds.amazonaws.com;
-                        database=loan;uid=pandaria_admin;
-                        pwd=G456Ub$MHw&C41')
+loan=odbcDriverConnect()
 
 
 
