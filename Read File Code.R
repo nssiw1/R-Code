@@ -10,7 +10,7 @@ myread = function(x){
 df.list <- lapply(file.list, myread)
 df = do.call(rbind,df.list)
 
-PandaV3_Loan=odbcDriverConnect('driver={MySQL ODBC 5.1 Driver};server=pandaria-for-data-analyst.cygxrcm7zhvh.ap-southeast-1.rds.amazonaws.com;database=loan;uid=pandaria_admin;pwd=G456Ub$MHw&C41')
+PandaV3_Loan=odbcDriverConnect()
 
 
 
